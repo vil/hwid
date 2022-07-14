@@ -19,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.vp.hwidlock.Client"
+      "me.vp.client.Client"
     ]
   },
   "mixins": [
-    "hwidlock.mixins.json"
+    "client.mixins.json"
   ],
 
   "depends": {

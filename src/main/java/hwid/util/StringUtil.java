@@ -3,11 +3,11 @@ package hwid.util;
 import java.util.ArrayList;
 
 /*
-*
-* @Author Vp (https://github.com/herravp)
-* Code is free to use :)
-*
-*/
+ *
+ * @Author Vp (https://github.com/herravp)
+ * Code is free to use :)
+ *
+ */
 
 public class StringUtil {
     public static int string = -1;

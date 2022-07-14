@@ -14,10 +14,10 @@ import java.util.Map;
 import java.util.Set;
 
 /**
-* Class used to execute Discord Webhooks with low effort
-* Code from: https://gist.github.com/k3kdude/fba6f6b37594eae3d6f9475330733bdb
-* Thanks, k3kdude
-*/
+ * Class used to execute Discord Webhooks with low effort
+ * Code from: https://gist.github.com/k3kdude/fba6f6b37594eae3d6f9475330733bdb
+ * Thanks, k3kdude
+ */
 public class Webhook {
     private final String url;
     private String content;

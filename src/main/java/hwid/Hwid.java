@@ -1,7 +1,7 @@
 package hwid;
 
 import hwid.util.*;
-import me.vp.hwidlock.Client;
+import me.vp.client.Client;
 import net.minecraft.client.MinecraftClient;
 
 import java.awt.*;
@@ -14,11 +14,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
-*
-* @Author Vp (https://github.com/herravp)
-* Code is free to use :)
-*
-*/
+ *
+ * @Author Vp (https://github.com/herravp)
+ * Code is free to use :)
+ *
+ */
 
 // Made using Fleet :gigachad: :muscle:
 public class Hwid {
@@ -73,6 +73,7 @@ public class Hwid {
         }
         return returnhwid.toString();
     }
+
     public static String getTime() {
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
         Date date = new Date();

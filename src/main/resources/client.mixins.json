@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "me.vp.hwidlock.mixin",
+  "package": "me.vp.client.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
     "MinecraftClientMixin"
