@@ -1,7 +1,6 @@
 package hwid;
 
 import hwid.util.*;
-import me.vp.client.Client;
 import net.minecraft.client.MinecraftClient;
 
 import java.awt.*;
@@ -15,21 +14,20 @@ import java.util.Date;
 
 /*
  *
- * @Author Vp (https://github.com/herravp)
+ * @Author Vili (https://github.com/v1li)
  * Code is free to use :)
  *
  */
-
-// Made using Fleet :gigachad: :muscle:
 public class Hwid {
-    // Huge auth thing fr
     public static boolean validateHwid() {
         String hwid = getHwid();
+        /* Uncomment to get your hwid */
         //System.out.println(hwid);
 
         try {
-            // replace the example with ur own url
-            URL url = new URL("https://example.com/example?hwid=" + hwid);
+            // replace the example with ur own url.
+            // You can use raw GitHub links for example.
+            URL url = new URL("https://example.com/hwid.json?hwid=" + hwid);
             URLConnection conn = url.openConnection();
             BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String line;
@@ -48,10 +46,11 @@ public class Hwid {
             // ur webhook url, if u even want to use webhook.
             Webhook webhook = new Webhook("");
             Webhook.EmbedObject embed = new Webhook.EmbedObject();
-
+            // Embed content
             embed.setTitle("hwid");
-            embed.setThumbnail("https://cdn.discordapp.com/attachments/986653004356812880/997177199029395576/yawn.png");
-            embed.setDescription("New login " + getHwid());
+            // Get current skin of the player and set it as the thumbnail
+            embed.setThumbnail("https://crafatar.com/avatars/" + MinecraftClient.getInstance().getSession().getUuid() + "?size=128&overlay");
+            embed.setDescription("New login - " + MinecraftClient.getInstance().getSession().getUsername());
             embed.setColor(Color.GRAY);
             embed.setFooter(getTime(), null);
             webhook.addEmbed(embed);

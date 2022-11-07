@@ -1,4 +1,4 @@
-package me.vp.client;
+package dev.vili.client;
 
 import hwid.Hwid;
 
@@ -11,21 +11,23 @@ import java.io.IOException;
 
 /*
  *
- * @Author Vp (https://github.com/herravp)
+ * @Author Vili (https://github.com/v1li)
  * Code is free to use :)
  *
  */
-public class Client implements ModInitializer {
-    public static MinecraftClient mc = MinecraftClient.getInstance();
-    public static final Logger LOGGER = LoggerFactory.getLogger("larp");
+
+/* Example client */
+public class ExampleClient implements ModInitializer {
+    public static final Logger LOGGER = LoggerFactory.getLogger("example");
 
     @Override
     public void onInitialize() {
-        LOGGER.info("I love larping fr adsajdadhafgff");
+        LOGGER.info("Loaded.");
     }
 
     // Init in MinecraftClientMixin.
     public static void init() {
+        // Validate hwid
         LOGGER.info("Validating HWID...");
         if (!Hwid.validateHwid()) {
             LOGGER.error("HWID not found!");

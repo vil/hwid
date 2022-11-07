@@ -2,7 +2,7 @@ package hwid.util;
 
 /*
  *
- * @Author Vp (https://github.com/herravp)
+ * @Author Vili (https://github.com/v1li)
  * Code is free to use :)
  *
  */
