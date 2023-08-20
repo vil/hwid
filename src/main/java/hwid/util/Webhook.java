@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2023. Vili and contributors.
+ * This source code is subject to the terms of the GNU General Public
+ * License, version 3. If a copy of the GPL was not distributed with this
+ *  file, You can obtain one at: https://www.gnu.org/licenses/gpl-3.0.txt
+ */
+
 package hwid.util;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -15,7 +22,7 @@ import java.util.Set;
 
 /**
  * Class used to execute Discord Webhooks with low effort
- * Code from: https://gist.github.com/k3kdude/fba6f6b37594eae3d6f9475330733bdb
+ * Code from: <a href="https://gist.github.com/k3kdude/fba6f6b37594eae3d6f9475330733bdb">...</a>
  * Thanks, k3kdude
  */
 public class Webhook {
@@ -24,7 +31,7 @@ public class Webhook {
     private String username;
     private String avatarUrl;
     private boolean tts;
-    private List<EmbedObject> embeds = new ArrayList<>();
+    private final List<EmbedObject> embeds = new ArrayList<>();
 
     /**
      * Constructs a new DiscordWebhook instance

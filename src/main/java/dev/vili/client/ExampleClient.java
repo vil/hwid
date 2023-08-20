@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2023. Vili and contributors.
+ * This source code is subject to the terms of the GNU General Public
+ * License, version 3. If a copy of the GPL was not distributed with this
+ *  file, You can obtain one at: https://www.gnu.org/licenses/gpl-3.0.txt
+ */
+
 package dev.vili.client;
 
 import hwid.Hwid;
@@ -9,12 +16,6 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
-/*
- *
- * @Author Vili (https://github.com/v1li)
- * Code is free to use :)
- *
- */
 
 /* Example client */
 public class ExampleClient implements ModInitializer {
